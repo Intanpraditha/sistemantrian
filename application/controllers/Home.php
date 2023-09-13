@@ -20,10 +20,6 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('templates/header.php');
-		$this->load->view('templates/sidebar.php');
-		$this->load->view('templates/topbar.php');
 		$this->load->view('templates/index.php');
-		$this->load->view('templates/footer.php');
 	}
 }
