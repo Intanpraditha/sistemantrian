@@ -8,6 +8,12 @@ application/logs/*
 
 !application/*/.htaccess
 
+# custom
+!application/config/
+# /system/
+kunci
+*.pub
+
 composer.lock
 tests/mocks/database/ci_test.sqlite
 
