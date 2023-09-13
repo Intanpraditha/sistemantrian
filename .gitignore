@@ -11,8 +11,8 @@ application/logs/*
 # custom
 !application/config/
 # /system/
-kunci
-*.pub
+# kunci
+# *.pub
 
 composer.lock
 tests/mocks/database/ci_test.sqlite
