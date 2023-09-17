@@ -8,6 +8,8 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <link rel="shortcut icon" type="x-icon" href="<?php echo base_url('landing/'); ?>img/about-4.jpg">
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -66,9 +68,10 @@
                             </div>
                         </div> -->
                         <a href="#contact" class="nav-item nav-link">Kontak</a>
-                    </div>
-                    <div class="border-start ps-4 d-none d-lg-block">
-                        <a href="<?php echo base_url('/login'); ?>"><button type="button" class="btn btn-primary rounded-pill px-4">login</button></a>
+                        <div class="border-start ps-4 d-none d-lg-block">
+                            <!-- <a href="" class="nav-item nav-link"><button type="button" class="px-4 nav-item nav-link">login</button></a> -->
+                        </div>
+                        <a href="<?php echo base_url('/login'); ?>" class="nav-item nav-link text-primary">Login</a>
                     </div>
                 </div>
             </nav>
