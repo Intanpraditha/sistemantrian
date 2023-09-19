@@ -92,7 +92,7 @@
                                 <div class="col-lg-7 text-center">
                                     <p class="fs-4 text-white animated zoomIn">Selamat datang di <br> <strong class="text-light">Praktek kesehatan mas Mantri Thariq Faisal Badri, S.Kep., Ns</strong></p>
                                     <!-- <h1 class="display-1 text-dark animated zoomIn">Organic & Quality Tea Production</h1> -->
-                                    <a href="#" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Daftar Antrian >></a>
+                                    <a href="<?= base_url('pasien/daftar') ?>" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Daftar Antrian >></a>
                                 </div>
                             </div>
                         </div>

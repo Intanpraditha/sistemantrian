@@ -104,11 +104,11 @@
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Pasien</span></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('antrian/') ?>">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Antrian</span></a>
-            </li>
+            </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('dokter/') ?>">
                     <i class="fas fa-fw fa-chart-area"></i>
@@ -118,6 +118,11 @@
                 <a class="nav-link" href="<?= base_url('users/') ?>">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Admin</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('waktu/') ?>">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Waktu</span></a>
             </li>
 
             <!-- Nav Item - Tables -->

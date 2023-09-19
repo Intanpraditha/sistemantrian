@@ -7,7 +7,7 @@
     </div>
     <div class="card-body">
         <div class="card-header py-3">
-            <a href="<?= base_url('users/tambah') ?>" class="m-0 font-weight-bold btn btn-primary" >Data Admin</a>
+            <a href="<?= base_url('users/tambah') ?>" class="m-0 font-weight-bold btn btn-primary" >Tambah data Admin</a>
         </div>
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
