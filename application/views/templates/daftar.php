@@ -1,3 +1,21 @@
+
+<?php 
+
+$error = '';
+if (empty($_POST) === false) {
+    $success = require_once 'validate.php';
+    if ($success) {
+        echo 'bisa cuy';
+    }else{
+        $error = 'silahkan centang terlebih dulu';
+    }
+}
+
+?>
+
+<head>
+    <script src="https://www.google.com/recaptcha/api.js?hl=id" async defer></script>
+</head>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
@@ -91,43 +109,48 @@
     }
 </style>
 
-<h1>Daftar ke praktek masFaisal</h1>
 
+<h1>Daftar ke praktek masFaisal</h1>
 <form method="post" action="<?= base_url('pasien/simpan') ?>">
 
             <div class="row">            
             <label class="form-label" >No. Antrian</label>
-            <input  class="form-control" type="text" name="no_antrian" required> <br>
+            <input  class="form-control" type="text" name="no_antrian"> <br>
             </div>
 
             <div class="row">
             <label class="form-label" >Nama Pasien</label>
-            <input  class="form-control" type="text" name="nama_pasien" required> <br>
+            <input  class="form-control" type="text" name="nama_pasien"> <br>
             </div>
 
             <div class="row">
             <label class="form-label" >NIK</label>
-            <input  class="form-control" type="text" name="nik" required> <br>
+            <input  class="form-control" type="text" name="nik"> <br>
             </div>
 
             <div class="row">
-            <label class="form-label" >Jenis Kelamin</label>
-            <input  class="form-control" type="text" name="jk" required> <br>
+            <!-- <label class="form-label" >Jenis Kelamin</label>
+            <input  class="form-control" type="text" name="jk" required> <br> -->
+                <label class="form-label" >Jenis Kelamin</label> <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jk" value="Laki-laki"> Laki-laki 
+                    <input class="form-check-input" type="radio" name="jk" value="Perempuan"> Perempuan<br><br>
+                </div>
             </div>
 
             <div class="row">
             <label class="form-label" >No. Telepon</label>
-            <input  class="form-control" type="text" name="no_telp" required> <br>
+            <input  class="form-control" type="text" name="no_telp"> <br>
             </div>
 
             <div class="row">
             <label class="form-label" >Tanggal</label>
-            <input  class="form-control" type="date" name="tgl" required> <br>
+            <input  class="form-control" type="date" name="tgl"> <br>
             </div>
 
             <div class="row">
                 <label class="form-label" >Waktu</label>
-                <select class="form-control"  name="Id_waktu" required> 
+                <select class="form-control"  name="Id_waktu"> 
                     <?php foreach ($waktu as $w) : ?>
                         <option value="<?= $w->id_waktu ?>"><?= $w->waktu ?></option>
                     <?php endforeach; ?>
@@ -136,8 +159,26 @@
             <br>
             <div class="row">
             <label class="form-label" >Status</label>
-            <input  class="form-control" type="text" name="status" required> <br>
+            <input  class="form-control" type="text" name="status" > <br>
             </div>
+
+            <!-- <div class="g-recaptcha" data-sitekey="6Lc9ozooAAAAAIE4MJwJkiONXVxOkyYIBsWlRxM5"></div>
+            <br/> -->
+
+            
+
+            <!-- <?php
+            if (empty ($error) === false) {
+                echo $error;
+            }
+            base_url('pasien/simpan')
+            ?> -->
 
             <button type="submit" class="m-0 font-weight-bold btn btn-success">Daftar</button>
         </form>
+
+        <script>
+//   function enableSubmit() {
+//     document.getElementById('submitBtn').removeAttribute('disabled');
+//   }
+</script>

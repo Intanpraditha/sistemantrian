@@ -68,6 +68,7 @@
                             </div>
                         </div> -->
                         <a href="#contact" class="nav-item nav-link">Kontak</a>
+                        <a href="<?= base_url('pasien/daftar') ?>" class="nav-item nav-link">Daftar</a>
                         <div class="border-start ps-4 d-none d-lg-block">
                             <!-- <a href="" class="nav-item nav-link"><button type="button" class="px-4 nav-item nav-link">login</button></a> -->
                         </div>

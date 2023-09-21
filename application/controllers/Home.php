@@ -29,6 +29,10 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('templates/index.php');
 	}
+	public function captcha()
+	{
+		include(APPPATH . 'views/proses.php');
+	}
 	public function daftar()
 	{
 		$data['waktu'] = $this->Waktu_model->get_all_waktu();

@@ -21,6 +21,7 @@
 
     <!-- Custom styles for this template-->
     <link href="<?php echo base_url('dist/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
 </head>
 
@@ -37,7 +38,7 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block"> <img src="<?php echo base_url('landing/img/about-4.jpg'); ?>" style="width: 350px;" alt=""></div>
+                            <div class="col-lg-6 d-none d-lg-block"> <img src="<?php echo base_url('landing/img/about-4.jpg'); ?>" style="width: 370px;" alt=""></div>
                             <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
                             <div class="col-lg-6">
                                 <div class="p-5">
@@ -45,7 +46,7 @@
                                         <h1 class="h4 text-gray-900 mb-4"> <b>Halo, Selamat Datang!</b> </h1>
                                     </div>
                                     <?php if(isset($error)) { echo '<p style="color:red;">'.$error.'</p>'; } ?>
-                                    <form class="user" action="<?= base_url('login/process') ?>" method="post">
+                                    <form class="user" action="<?= base_url('home/captcha') ?>" method="post">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user"
                                                 placeholder="Username..." name="username" required>
@@ -62,6 +63,7 @@
                                             </div>
                                         </div> -->
                                         <hr>
+                                        <div class="g-recaptcha" data-sitekey="6Lc9ozooAAAAAIE4MJwJkiONXVxOkyYIBsWlRxM5"></div> 
                                         <hr>
                                         <button type="submit" class="btn btn-success btn-user btn-block">Login</button>
                                         <!-- <a href="index.html" class="btn btn-primary btn-user btn-block">
@@ -105,3 +107,4 @@
 </body>
 
 </html>
+
